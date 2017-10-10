@@ -15,207 +15,140 @@
         <legend>
             <b>Briefly about yourself</b>
         </legend>
-        <table>
-            <tr>
-                <td>
-                    <label for="name">Name:</label>
-                    <input type="text" name="firstname" maxlength="10" id="name">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="lastname">Surname:</label>
-                    <input type="text" name="lastname" maxlength="10" id="lastname">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <p>Sex:</p>
-                    <input type="radio" id="male" name="sex" checked>
-                    <label for="male">Male</label>
-
-                    <input type="radio" id="female" name="sex">
-                    <label for="female">Female</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="age">Your age:</label>
-                    <input type="number" id="age">
-                    <label for="age">years</label>
-                </td>
-            </tr>
-        </table>
+        <div>
+            <p><label>Name:<input type="text" name="firstname" maxlength="10"></label></p>
+            <p><label>Surname:<input type="text" name="lastname" maxlength="10"></label></p>
+        </div>
+        <div>
+            <p>Sex:</p>
+            <p>
+                <label> <input type="radio" name="sex" checked>Male</label>
+                <label> <input type="radio" id="female" name="sex">Female</label>
+            </p>
+        </div>
+        <div>
+            <label>Your age:<input type="number">years</label>
+        </div>
     </fieldset>
 
     <fieldset>
         <legend>
             <b>Detail</b>
         </legend>
-        <table>
-            <tr>
-                <td>
-                    <input type="radio" id="young man" name="first-detail" checked>
-                    <label for="young man">Young man</label>
-                    <br>
-                    <input type="radio" id="young girl" name="first-detail">
-                    <label for="young girl">Young girl</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="date" id="birthday">
-                    <label for="birthday">Birthday date</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <select id="marital_status">
-                        <option value="state">State1</option>
+
+
+        <div>
+            <p><label><input type="radio" name="first-detail" checked>Young man</label></p>
+            <p><label><input type="radio" name="first-detail">Young girl</label></p>
+        </div>
+
+        <div>
+            <p><label><input type="date">Birthday date</label></p>
+            <p>
+                <select id="marital-status">
+                    <option value="state">State1</option>
+                    <option value="state">State2</option>
+                    <option value="state">State3</option>
+                    <option value="state">State4</option>
+                </select>
+                <label for="marital-status">Marital status</label>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <select id="social-status">
+                    <option value="state">State1</option>
+                    <option value="state">State2</option>
+                    <option value="state">State3</option>
+                    <option value="state">State4</option>
+                </select>
+                <label for="social-status">Social status</label>
+            </p>
+            <p><label><input type="text">Place of residence</label></p>
+        </div>
+
+        <div>
+            <b>What you usually do at weekend:</b>
+
+            <p><label><input type="checkbox">hobby1</label></p>
+            <p><label><input type="checkbox">hobby2</label></p>
+            <p><label><input type="checkbox">hobby3</label></p>
+            <p><label><input type="checkbox">hobby4</label></p>
+        </div>
+
+        <div>
+            <b>Tell about Forms in HTML book:</b>
+
+            <p>
+                <label>
+                    <select>
+                        <option value="state">Site frequency</option>
                         <option value="state">State2</option>
                         <option value="state">State3</option>
                         <option value="state">State4</option>
                     </select>
-                    <label for="marital_status">Marital status</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <select id="social_status">
-                        <option value="state">State1</option>
-                        <option value="state">State2</option>
-                        <option value="state">State3</option>
-                        <option value="state">State4</option>
-                    </select>
-                    <label for="social_status">Social status</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" id="place_of_residence">
-                    <label for="place_of_residence">Place of residence</label>
-                </td>
-            </tr>
-            <tr>
-                <td><b>What you usually do at weekend:</b></td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="hobby1">
-                    <label for="hobby1">hobby1</label><br>
-                    <input type="checkbox" id="hobby2">
-                    <label for="hobby2">hobby2</label><br>
-                    <input type="checkbox" id="hobby3">
-                    <label for="hobby3">hobby3</label><br>
-                    <input type="checkbox" id="hobby4">
-                    <label for="hobby4">hobby4</label>
-                </td>
-            </tr>
-            <tr>
-                <td><b>Tell about Forms in HTML book:</b></td>
-            </tr>
-            <tr>
-                <td>
-                    <label>
-                        <select>
-                            <option value="state">Site frequency</option>
-                            <option value="state">State2</option>
-                            <option value="state">State3</option>
-                            <option value="state">State4</option>
-                        </select>
-                    </label>
-            </tr>
-            <tr>
-                <td><b>How many books you already read:</b></td>
-            </tr>
-            <tr>
-                <td>
-                    <form action="">
-                        <input type="radio" id="0 - 10" name="books">
-                        <label for="0 - 10">0 - 10</label>
-                        <br>
-                        <input type="radio" id="11-20" name="books">
-                        <label for="11-20">11 - 20</label>
-                        <br>
-                        <input type="radio" id="21-30" name="books">
-                        <label for="21-30">21 - 30</label>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <form action="">
-                        <label for=""><b>yours comments:</b></label><br>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label>
-                        <select size="3">
-                            <option value="position">Position 1</option>
-                            <option value="position" selected>Position 2</option>
-                            <option value="position">Position 3</option>
-                            <option value="position">Position 4</option>
-                        </select>
-                    </label>
-                </td>
-            </tr>
-        </table>
+                </label>
+            </p>
+        </div>
+
+        <div>
+            <b>How many books you already read:</b>
+
+            <p><label><input type="radio" name="books">0 - 10</label></p>
+            <p><label> <input type="radio" name="books">11 - 20</label></p>
+            <p><label> <input type="radio" name="books">21 - 30</label></p>
+        </div>
+
+        <div>
+            <p><label for="textarea"><b>Yours comments:</b></label></p>
+            <textarea name="" id="textarea" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label>
+                <select multiple size="3">
+                    <option value="position">Position 1</option>
+                    <option value="position" selected>Position 2</option>
+                    <option value="position">Position 3</option>
+                    <option value="position">Position 4</option>
+                </select>
+            </label>
+        </div>
     </fieldset>
 
     <fieldset>
         <legend>
             <b>The end</b>
         </legend>
-        <table>
-            <tr>
-                <td>
-                    <form action="">
-                        <input type="text" placeholder="placeholder">
-                    </form>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="email"><b>Email:</b></label><br>
-                    <input type="email" id="email">
-                </td>
-            </tr>
-            <tr>
-                <td><b>Would you like to subscribe to the most up-to-date spam mailing ?</b><br>
-                    <i>Choose a category</i>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="checkbox" id="easy_spam">
-                    <label for="easy_spam">Easy spam</label><br>
-                    <input type="checkbox" id="normal_spam">
-                    <label for="normal_spam">Normal spam</label><br>
-                    <input type="checkbox" id="real_spam">
-                    <label for="real_spam">Eeal spam</label>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <b>How difficult is the task:</b>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="radio" id="Easy" name="difficult" checked>
-                    <label for="Easy">Easy</label>
-                    <input type="radio" id="Normal" name="difficult">
-                    <label for="Normal">Normal</label>
-                    <input type="radio" id="Hard" name="difficult">
-                    <label for="Hard">Hard</label>
-                </td>
-            </tr>
-        </table>
+
+        <div>
+            <p><input type="text" placeholder="placeholder"></p>
+
+            <p><label for="email"><b>Email:</b></label></p>
+            <input type="email" id="email">
+        </div>
+
+        <div>
+            <p><b>Would you like to subscribe to the most up-to-date spam mailing ?</b><br><i>Choose a category</i></p>
+
+            <p><label><input type="checkbox">Easy spam</label></p>
+            <p><label><input type="checkbox">Normal spam</label></p>
+            <p><label><input type="checkbox">Real spam</label></p>
+        </div>
+
+        <div>
+            <b>How difficult is the task:</b>
+
+            <p><label><input type="radio" name="difficult" checked>Easy</label></p>
+            <p><label><input type="radio" name="difficult">Normal</label></p>
+            <p><label><input type="radio" name="difficult">Hard</label></p>
+        </div>
     </fieldset>
-    <button type="submit">Submit</button>
+
+    <div>
+        <button type="submit">Submit</button>
+    </div>
 </form>
 </body>
 </html>
